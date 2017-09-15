@@ -1,117 +1,210 @@
-<!DOCTYPE html> <html>
+﻿<!DOCTYPE html>
+ <html>
+
 	<head>
 
+
 	<!-- Required meta tags -->
+
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta charset="UTF-8"> 
+
+	<meta charset="UTF-8">
+
+ 
 
         <!-- Bootstrap CSS -->
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+
+
 	<!-- Inserindo o arquivo CSS -->
+
 	<link href="./style.css"
 	type="text/css"
 	rel="stylesheet">
 
+
+
 	<!-- Adicionando o arquivo de fonte "Raleway" -->
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway"
 	type="text/css"
 	rel="stylesheet"s>
 
+
+
 	<title>JS-IMC</title>
 	<CENTER><h1>Índice de Massa Corpórea</h1></CENTER>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
 	<!-- Bootstrap -->
+
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
+
+
 	<script type="text/javascript">
+
 		function calcula_imc(){
+
 			var altura = document.imcForm.altura.value;
+
 			var peso = document.imcForm.peso.value;
+
 			var quadrado = (altura * altura);
+
 			var calculo = (peso/quadrado);
 
+
 			if(calculo<18.5){alert("Você está magro com esse indice: " + calculo);}
+
 			else if(calculo>=18.5 && calculo<25){alert("Você está normal com esse indice: " + calculo);}
+			
 			else if(calculo>=25 && calculo<30) {alert("Você está com sobre peso com esse indice: " + calculo);}
+			
 			else if(calculo>=30 && calculo<40) {alert("Você está com obesidade com esse indice: " + calculo);}
+			
 			else if (calculo>40) alert("Você está com obesidade grave com esse indice: " + calculo);
+
 		}
+
 	</script>
+
+
 	
-	</head>
+</head>
+
+
 
 
 	<body>
+
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="card hovercard">
+
+			<div class="row"  centered>
+
+				<div class="col-lg-12">
+
+					<div class="card hovercard" >
+
 						<form name="imcForm" id="imcForm" action="#">
+
 							<p>Altura<br /><input type="text" id="altura" name="altura" /></p>
+
 							<p>Peso <br /><input type="text" id="peso" name="peso" /></p>
 
+
 							<p>
+
 								<label><input type="radio" name="sexo" value="opção" id="sexo_0" />Masculino</label>
+
 								<br />
+
 								<label><input type="radio" name="sexo" value="opção" id="sexo_1" />Feminino</label>
+
 							</p>
-							
+
 							<p><input name="Enviar" type="submit" value="Calcular" onclick="calcula_imc()" /></p>
 						</form>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 			
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-		
+
+
+	
 		<!-- Container "assinatura" -->
+
 			<div class="container">
+
 				<div class="row">
+
 					<div class="col-lg-3 col-sm-6">
+
 						<div class="card hovercard">
+
 							<div class="cardheader"> </div>
+
 							<div class="avatar"> <img alt="" src="./18685942.jpg"> </div>
+
 							<div class="info">
+
 								<div class="title"> Victor Murilo Balbino Machado </div>
+
 								<div class="desc"> Graduando em Sistemas de Informação na UFG </div>
+
 								<div class="desc"> 30 de Junho de 1993 </div>
+
 								<div class="desc"> Goiânia/Go - Brasil </div>
+
 							<div class="desc"> Telefone: +55 62 9 9282-1073 </div>
+
 							</div>
+
 							<div class="bottom">
-								<a class="btn btn-danger btn-sm" rel="publisher"
-								href="mailto:victormurilo@gmail.com">
+
+								<a class="btn btn-danger btn-sm" rel="publisher" href="mailto:victormurilo@gmail.com">
+
 									<i class="fa fa-behance"></i>
+
 								</a>
-								<a class="btn btn-primary btn-sm" rel="publisher"
-								href="https://www.facebook.com/pinguimurilo">
+
+								<a class="btn btn-primary btn-sm" rel="publisher" href="https://www.facebook.com/pinguimurilo">
+
+
 									<i class="fa fa-facebook"></i>
 								</a>
-								<a class="btn btn-warning btn-sm" rel="publisher"
-								href="https://plus.google.com/u/0/+VictorMuriloBalbinoMachado">
+
+
+								<a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/u/0/+VictorMuriloBalbinoMachado">
+
+
 									<i class="fa fa-google-plus"></i>
 								</a>
+
 							</div>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 
 		
 		<!-- Optional JavaScript -->
+
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 		<script src="http://code.jquery.com/jquery.js"></script>
+
 
 		<script src="js/bootstrap.min.js"></script>
 
 
+
 	</body>
+
 
 </html>

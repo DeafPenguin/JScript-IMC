@@ -41,6 +41,11 @@ img {
     border-radius: 100%;
 }
 
+.centered {
+    margin: 0 auto !important;
+    float: none !important;
+}
+
 .container {
 		margin-right: auto;
 		margin-left: auto;
